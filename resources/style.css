@@ -8,19 +8,40 @@ html {
 }
 
 header {
+  box-sizing: border-box;
+  height: 69px;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   background-color: black;
+  text-align: right;
+  border-bottom: 1px solid seashell;
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+
+#logo img {
+  height: 50px;
 }
 
 ul li {
   display: inline;
+  margin: 10px;
+}
+
+a {
+  color: seashell;
 }
 
 main {
   position: relative;
   top: 69px;
-  z-index: 0;
 }
 
 footer {
