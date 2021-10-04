@@ -1,0 +1,13 @@
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+}
