@@ -42,6 +42,7 @@ a {
 main {
   position: relative;
   top: 69px;
+  padding: 0 20px
 }
 
 #mission {
@@ -59,10 +60,13 @@ main {
 h2, h4 {
   display: block;
   width: 100%;
-  background-color: black;
   opacity: 0.9;
   margin: 0;
   padding: 5px 0;
+}
+
+#mission h2, #mission h4 {
+  background-color: black;
 }
 
 #featured-tea {
@@ -127,11 +131,15 @@ figcaption {
 }
 
 #contact-info {
+  height: 200px;
+  margin-top: 10px;
   margin-bottom: 69px;
+  opacity: 0.9;
 }
 
 footer {
   padding-left: 20px;
   display: block;
-  float: left;
+  text-align: left;
+  opacity: 0.9;
 }
