@@ -1,6 +1,7 @@
 html {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: bold;
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -61,7 +62,7 @@ h2, h4 {
   background-color: black;
   opacity: 0.9;
   margin: 0;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 #featured-tea {
@@ -91,7 +92,39 @@ figcaption {
   width: 300px;
 }
 
+#locations-container {
+  display: flexbox;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./img-locations-background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 69px;
+}
 
+#locations-container h2 {
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+#box-container {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background-color: black;
+  margin: 5px 20px;
+  align-items: center;
+}
 
 #contact-info {
   margin-bottom: 69px;
