@@ -6,10 +6,10 @@ html {
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  box-sizing: border-box;
 }
 
 header {
-  box-sizing: border-box;
   height: 69px;
   position: fixed;
   top: 0;
@@ -23,7 +23,7 @@ header {
 
 #logo {
   float: left;
-  margin: 10px;
+  padding: 10px;
 }
 
 #logo img {
@@ -42,14 +42,13 @@ a {
 main {
   position: relative;
   top: 69px;
-  padding: 0 20px
 }
 
 #mission {
   display: flex;
   height: 700px;
+  min-width: 350px;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   background-image: url(./img-mission-background.webp) ;
   background-size: cover;
@@ -71,8 +70,8 @@ h2, h4 {
 
 #featured-tea {
   display: inline-flex;
-  align-items: center;
   flex-direction: column;
+  align-content: space-around;
   padding-top: 69px;
 }
 
@@ -99,6 +98,7 @@ figcaption {
 #locations-container {
   display: flexbox;
   min-height: 500px;
+  min-width: 350px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -114,6 +114,10 @@ figcaption {
   padding-bottom: 10px;
 }
 
+#locations-container h4 {
+  margin: 20px 0;
+}
+
 #box-container {
   display: flexbox;
   flex-direction: column;
@@ -126,6 +130,7 @@ figcaption {
   height: 300px;
   display: inline-block;
   background-color: black;
+  opacity: 1;
   margin: 5px 20px;
   align-items: center;
 }
@@ -147,8 +152,9 @@ footer {
 @media only screen and (max-width: 570px) {
   header {
     height: 138px;
-    text-align: justify;
+    text-align: center;
     font-size: 0.8rem;
+
   }
   #logo {
     float: none;
@@ -158,12 +164,19 @@ footer {
     top: 138px;
   }
   ul {
-    padding: inline start inline end;
+    padding-inline-start: 0;
   }
   #featured-tea {
     padding-top: 138px;
   }
   #locations-container {
     padding-top: 138px;
+  }
+  #contact-info {
+    margin-bottom: 138px;
+  }
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
   }
 }
