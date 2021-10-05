@@ -143,3 +143,27 @@ footer {
   text-align: left;
   opacity: 0.9;
 }
+
+@media only screen and (max-width: 570px) {
+  header {
+    height: 138px;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+  #logo {
+    float: none;
+    text-align: center;
+  }
+  main {
+    top: 138px;
+  }
+  ul {
+    padding: inline start inline end;
+  }
+  #featured-tea {
+    padding-top: 138px;
+  }
+  #locations-container {
+    padding-top: 138px;
+  }
+}
