@@ -55,7 +55,7 @@ main {
   background-position: center;
 }
 
-#mission h2, #mission h4 {
+h2, h4 {
   display: block;
   width: 100%;
   background-color: black;
@@ -63,6 +63,35 @@ main {
   margin: 0;
   padding: 5px;
 }
+
+#featured-tea {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 69px;
+}
+
+#photo-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+figure {
+  margin: 10px 0;
+}
+
+figcaption {
+  padding: 10px;
+}
+
+.photo img {
+  height: 200px;
+  width: 300px;
+}
+
+
 
 #contact-info {
   margin-bottom: 69px;
